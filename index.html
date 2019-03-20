@@ -24,10 +24,14 @@
         <!--media CSS-->
     <link rel="stylesheet" href="css/media.css">
 
-
+        <!--sprite-->
     <link rel="stylesheet" href="sprite.css" />
    
+        <!-- font awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
     <title>Ремонт квартир</title>
+
 </head>
 <body>
     <header>
@@ -37,7 +41,7 @@
                     <img src="images/logo/logo6.svg" alt="Логотип" height="50">
                 </div><!--end first_row_logo -->
                 <div class="first_row_nav">
-                    <ul class="nav">
+                    <ul class="nav nav_for_desktop_first">
                         <li class="nav-item">
                             <a class="nav-link color__gray" href="#">Главная</a>
                         </li>
@@ -109,27 +113,33 @@
                 </div><!--end portfolio_headline -->
                     <div class="portfolio_content">
                         <div class="portfolio_item">
-                            <h2>
-                                Москве 9км МКАД
+                            <h2 class="color__darkgray">
+                                Москва 5кв.м
                             </h2>
+                            <p class="color__gray">
+                                Ремонт сан-узал. Сантехника, электрика, отделочные работы.
+                            </p>
                             <div class="sprite">
-                                хата
                             </div>
                         </div>    
                         <div class="portfolio_item">
-                            <h2>
-                               Москва ул Москва
+                            <h2 class="color__darkgray">
+                               Москва 52 кв.м
                             </h2>
+                            <p class="color__gray">
+                                Ремонт сан-узал. Сантехника, электрика, отделочные работы.И демонтаж.
+                            </p>
                             <div class="sprite">
-                                    хата
                             </div>
                         </div>
                         <div class="portfolio_item">
-                            <h2>
-                                москва не москва
+                            <h2 class="color__darkgray">
+                                Москва 13 кв.м
                             </h2>
+                            <p class="color__gray">
+                                Ремонт сан-узал. Сантехника, электрика, отделочные работы. вынос музора и доставка материала.
+                            </p>
                             <div class="sprite">
-                                хата
                             </div>
                         </div>
                     </div><!--end portfolio content-->
@@ -140,7 +150,71 @@
 
             </div><!--end portfolio container-->
         </section><!--end portfolio-->
-        
+        <section class="advantages">
+            <div class="container">   
+                <ul class="nav nav-pills mb-3 nav_advantages" id="pills-tab" role="tablist">
+                    <li class="nav-item tab_mod">
+                        <a class="nav-link active tab_icon fas" id="pills-service-tab" data-toggle="pill" href="#pills-service" role="tab" aria-controls="pills-service" aria-selected="true">Сервис</a>
+                    </li>
+                    <li class="nav-item tab_mod">
+                        <a class="nav-link tab_icon fas" id="pills-benefit-tab" data-toggle="pill" href="#pills-benefit" role="tab" aria-controls="pills-benefit" aria-selected="false">Выгоды</a>
+                    </li>
+                    <li class="nav-item tab_mod">
+                        <a class="nav-link tab_icon fas" id="pills-warranty-tab" data-toggle="pill" href="#pills-warranty" role="tab" aria-controls="pills-warranty" aria-selected="false">Гарантии</a>
+                    </li>
+                </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active advantages_item" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab">
+                            <div class="tab_content_block_for_img float-left">
+                                <img class="size_svg" src="images/advantages/service2.svg" alt="Сервис">
+                            </div>
+                            <div class="tab_content_block_for_text float-right">
+                                <h3 class="color__green">
+                                    Сервис высокго уровня, лучшая строительная бригада!
+                                </h3>
+                                <p class="color__gray">
+                                    Супер выгодная выгода, более выгодной выгоды вы не выгодаете.
+                                    От такой выгоды, другие выгоды, кажутся не выгодными , 
+                                    и если сравнивать выгодные выгоды , то эта выгода очень выгодная.
+                                </p>
+                            </div>
+                        </div><!-- edn advantages_item-->
+                        <div class="tab-pane fade advantages_item" id="pills-benefit" role="tabpanel" aria-labelledby="pills-benefit-tab">
+                            <div class="tab_content_block_for_img float-left">
+                                <img class="size_svg" src="images/advantages/benefit.svg" alt="Выгода">
+                            </div>
+                            <div class="tab_content_block_for_text float-right">
+                                <h3 class="color__green">
+                                    Высокая выгода, умопомрачительная суперская выгода!
+                                </h3>
+                                <p class="color__gray">
+                                    Супер выгодная выгода, более выгодной выгоды вы не выгодаете.
+                                    От такой выгоды, другие выгоды, кажутся не выгодными , 
+                                    и если сравнивать выгодные выгоды , то эта выгода очень выгодная.
+                                </p>
+                            </div>
+                        </div><!--end advantages_item -->
+                        <div class="tab-pane fade advantages_item" id="pills-warranty" role="tabpanel" aria-labelledby="pills-warranty-tab">
+                                <div class="tab_content_block_for_img float-left">
+                                    <img class="size_svg" src="images/advantages/warranty.svg" alt="Гарантия">
+                                </div>
+                                <div class="tab_content_block_for_text float-right">
+                                    <h3 class="color__green">
+                                        Гарантия на все работы 12 месяцев по договору!
+                                    </h3>
+                                    <p class="color__gray">
+                                        Супер выгодная выгода, более выгодной выгоды вы не выгодаете.
+                                        От такой выгоды, другие выгоды, кажутся не выгодными , 
+                                        и если сравнивать выгодные выгоды , то эта выгода очень выгодная.
+                                    </p>
+                                </div>
+                        </div><!--end advantages_item -->
+                    </div><!-- end tab content-->
+
+
+                
+            </div><!-- end container advantages-->
+        </section><!--end advantages-->
 
 
 
