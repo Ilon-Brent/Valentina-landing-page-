@@ -344,15 +344,114 @@ a {
     left: 29%;
 }
 .price_content_item {
-    margin-bottom: 15%;
+    margin-bottom: 8%;
+}
+.stages h4 {
+    text-align: start;
+    padding-bottom: 6%;
+}
+.stages_content {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+.stages_content_item img {
+    width: 80px;
+    padding-bottom: 5%;
+}
+.stages_content_item h5 {
+    font-size: 20px;
+    color: #949494;
+}
+.stages_content_item {
+    position: relative;
+}
+.stages_content_item:hover {
+    opacity: .5;
+}
+.stages_content_item:after {
+    content: "\2192";
+    font-size: 96px;
+    color: #add136;
+    position: absolute;
+    top: -30%;
+    left: 85%;
+}
+.stages_content_item:last-child:after {
+    content: "";
+}
+.advice {
+    padding-bottom: 5%;
+}
+.wrapper_for_bg {
+    background: url(../images/advice/bg11.jpg) no-repeat bottom /cover;
+    /* background-color: #f5f9eb; */
+}
+.advice h4 {
+    text-align: start;
+    padding: 1% 0 3% 5%;
+}
+.advice h5 {
+    padding: 3% 0;
+}
+.advice blockquote {
+    padding: 5% 0 10% 0;
+}
+.advice_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.advice_content_item {
+    padding-bottom: 5%;
+}
+.advice_content_item_dialog_block {
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    text-align: center;
+    padding: 2px;
+    margin-left: 10%;
+}
+.advice_content_item_dialog_block:after {
+    content: ''; 
+    position: absolute;
+    left: 20px; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+.advice_content_item_img_text {
+    padding-top: 5%;
+}
+.advice_content_item_img_text img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10%;
+}
+.contact {
+    padding-bottom: 35%;
+}
+.contact h6 {
+    margin-bottom: 2%;
+}
+.contact_item_contacts li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+.contact_item_contacts a {
+    color: #949494;
+}
+.contact_item_contacts a:hover {
+    color: #add136;
+}
+.contact_item_map {
+    width: 600px;
 }
 
-
-
-
-
-
-  
 
 
   
