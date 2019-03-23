@@ -118,14 +118,15 @@ a {
     margin-bottom: 10%;
 }
 .header_content_headlines h1 {
-    padding-top: 12%;
+    padding: 12% 0 3% 0;
     font-weight: 600;
+    text-shadow: 1px 1px rgb(177, 171, 171);
 }
 .header_content_headlines {
     padding-bottom: 7%;
 }
 .header_content_button {
-    padding-bottom: 20%;
+    padding: 5% 0 11% 0;
 }
 .header_content_button a {
     padding: 1%;
@@ -183,17 +184,34 @@ a {
 .portfolio_item {
     text-align: center;
     display: grid;
-    grid-template-rows: 35px 120px 350px;
+    grid-template-rows: 10% 20% 70%;
 }
   /* sprite */
-  .sprite {
-    background: url(../images/portfolio/sprite1.png) no-repeat;
-    width: 320px;
-    height: 300px;
+  .sprite1 {
+    background: url(../images/portfolio/bathroom.jpg) no-repeat;
+    width: 310px;
+    height: 320px;
 }
-.sprite:hover {
-    background-position: -600px 0;
+.sprite2 {
+    background: url(../images/portfolio/new.jpg) no-repeat;
+    width: 310px;
+    height: 320px;
 }
+.sprite3 {
+    background: url(../images/portfolio/second.jpg) no-repeat;
+    width: 310px;
+    height: 320px;
+}
+.sprite1:hover {
+    background-position: -318px 0;
+}
+.sprite2:hover {
+    background-position: -320px 0;
+}
+.sprite3:hover {
+    background-position: -310px 0;
+}
+
 /* end sprite*/
 .portfolio {
     margin-bottom: 7%;
@@ -388,11 +406,10 @@ a {
 }
 .wrapper_for_bg {
     background: url(../images/advice/bg11.jpg) no-repeat bottom /cover;
-    /* background-color: #f5f9eb; */
 }
 .advice h4 {
     text-align: start;
-    padding: 1% 0 3% 5%;
+    padding: 1% 0 3% 8.5%;
 }
 .advice h5 {
     padding: 3% 0;
@@ -416,6 +433,8 @@ a {
     text-align: center;
     padding: 2px;
     margin-left: 10%;
+    width: 400px;
+    height: 150px;
 }
 .advice_content_item_dialog_block:after {
     content: ''; 
@@ -425,22 +444,51 @@ a {
     border-top: 10px solid #fff;
 }
 .advice_content_item_img_text {
-    padding-top: 5%;
+    padding-top: 5%; 
+    position: relative;
+}
+.advice_content_item_img_text h6 {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.advice_content_item_img_text span {
+    font-size: 18px;
+    color: #515151;
 }
 .advice_content_item_img_text img {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     border-radius: 10%;
 }
 .contact {
-    padding-bottom: 35%;
+    padding-bottom: 3%;
 }
 .contact h6 {
     margin-bottom: 2%;
 }
+.contact_item_contacts {
+    margin-top: 5%;
+}
+.contact_item_contacts ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .contact_item_contacts li {
     list-style: none;
-    margin-bottom: 7px;
+    margin-bottom: 10%;
+}
+.contact_item_contacts_a a:before {
+    content: "\f095";
+    font-size: 20px;
+    color: #515151;
+    margin-right: 5px;
+}
+.contact_item_contacts_last_a a:before {
+    content: "\f232";
+    font-size: 20px;
+    color: #515151;
+    margin-right: 5px;
 }
 .contact_item_contacts a {
     color: #949494;
@@ -449,9 +497,17 @@ a {
     color: #add136;
 }
 .contact_item_map {
-    width: 600px;
+    width: 550px;
 }
-
+.footer {
+    background-color: #e2f8ff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+.footer a:hover {
+    color: #26a6d1;
+}
 
 
   
