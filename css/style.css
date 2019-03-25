@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* specification */
+    /* from Goofle Fonts  - Open Sans */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic');
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -9,13 +11,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
 }
-/* from Goofle Fonts  - Open Sans */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic');
-
 h1 {
     font-size: 40px;
 }
-
 h2,h3,h4,h5,h6 {
     font-size: 22px;
 }
@@ -58,6 +56,9 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 1%;
+}
+.first_row img {
+    height: 50px;
 }
 .nav_for_desktop_first a {
     font-size: 16px;
@@ -102,17 +103,19 @@ a {
         transform: scaleX(1);
     }
 /*end menu effect*/
+/* nav for mobile */
+.navigation_for_mobile a {
+    color: #949494 !important;
+}
+/* end nav for mobile*/
 .first_row_call a {
     display: inline-block;
     padding: .4em .8em;
     border-radius: 100px;
-    
 }
 .header_content {
     background-blend-mode: multiply;
-    background: url(../images/header/bg5.jpg) no-repeat center/ cover;
-    /* background-color: #bfe0bf; */
-    /* height: 600px; */
+    background: url(../images/header/bg.jpg) no-repeat center/ cover;
     width: 100%;
     text-align: center;
     margin-bottom: 10%;
@@ -144,6 +147,9 @@ a {
 .about_content {
     margin-bottom: 10%;
 }
+.portfolio {
+    padding-bottom: 7%;
+}
 .portfolio_headline {
     text-align: center;
 }
@@ -156,7 +162,6 @@ a {
     margin: 0 auto;
     position: relative;
 }
-
 .portfolio_headline_h3:before {
     content: "";
     display: block;
@@ -180,11 +185,10 @@ a {
     grid-template-columns: 310px 310px 310px;
     justify-content: space-between;
     margin-top: 5%;
+    grid-gap: 5px;
 }
 .portfolio_item {
     text-align: center;
-    display: grid;
-    grid-template-rows: 10% 20% 70%;
 }
   /* sprite */
   .sprite1 {
@@ -211,7 +215,6 @@ a {
 .sprite3:hover {
     background-position: -310px 0;
 }
-
 /* end sprite*/
 .portfolio {
     margin-bottom: 7%;
@@ -262,6 +265,7 @@ a {
 }
 .advantages_second_content {
     display: flex;
+    flex-wrap: wrap;
 }
 .advantages_second_content_item {
     width: 50%;
@@ -273,6 +277,14 @@ a {
 .advantages_second_content_item p {
     width: 85%;
     padding: 3% 5% 5% 0;
+}
+.advantages_second_content_item {
+    height: 350px;
+    position: relative;
+}
+.advantages_second_content_item a {
+    position: absolute;
+    bottom: 7%;
 }
 .advantages_second_content_item_child1 a {
     margin-left: 2%;
@@ -405,7 +417,7 @@ a {
     padding-bottom: 5%;
 }
 .wrapper_for_bg {
-    background: url(../images/advice/bg11.jpg) no-repeat bottom /cover;
+    background: url(../images/advice/bg_advice.jpg) no-repeat bottom /cover;
 }
 .advice h4 {
     text-align: start;
@@ -429,7 +441,6 @@ a {
     background: #fff;
     border-radius: 10px;
     position: relative;
-    width: 300px;
     text-align: center;
     padding: 2px;
     margin-left: 10%;
@@ -508,8 +519,6 @@ a {
 .footer a:hover {
     color: #26a6d1;
 }
-
-
   
   
 
